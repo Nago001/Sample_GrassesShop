@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+
+  <title>Sample_GrassesShop_Visions</title>
+  <link rel="icon" href="images/favicon.svg" type="images/svg+xml">
+  <link rel="icon alternate" href="images/favicon.png" type="images/png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="Nago's SampleSite">
+  <meta property="og:title" content="Sample_GrassesShop_Visions">
+  <meta property="og:description" content="Nago_Webデザイン Sampleサイト 眼鏡屋_Visions WebデザイナーNago">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Sample_GrassesShop_Visions">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="leftBar">
+    <p>Visions, Made in Japan, Create glasses that look to the Future.</p>
+  </div>
+
+  <div class="mainSpace">
+    <header>
+      <a href="index.html">
+      <img src="img/Logo.png" alt="Logo">
+      </a>
+      <nav>
+        <div class="gide">
+          <ul>
+            <li class="btn"><a href="index.html">HOME</a></li>
+            <li class="btn"><a href="news.html">NEWS</a></li>
+            <li class="btn"><a href="products.html">PRODUCTS</a></li>
+            <li class="btn"><a href="about.html">ABOUT</a></li>
+            <li class="btn"><a href="join.html">JOIN</a></li>
+            <li class="btn"><a href="cntact.html">CONTACT</a></li>
+          </ul>
+          <button class="storeBtn"><p class="btnText">WEB STORE</p></button>
+        </div>
+        
+        <button id="menuBtn">
+          <span class="meatball-ball"></span>
+          <span class="meatball-ball"></span>
+          <span class="meatball-ball"></span>
+        </button>
+      </nav>
+
+      <div id="menu">
+        <div class="menuTop">
+          <img src="img/Logo.png" alt="">
+          <button id="menuClose"></button>
+        </div>
+
+        <ul class="menuList">
+          <li class="btn"><a href="index.html">HOME</a></li>
+          <li class="btn"><a href="news.html">NEWS</a></li>
+          <li class="btn"><a href="products.html">PRODUCTS</a></li>
+          <li class="btn"><a href="about.html">ABOUT</a></li>
+          <li class="btn"><a href="join.html">JOIN</a></li>
+          <li class="btn"><a href="cntact.html">CONTACT</a></li>
+        </ul>
+
+        <button class="storeBtn"><p class="btnText">WEB STORE</p></button>
+
+        
+        <div class="social">
+          <ul>
+            <li><a href=""><img src="img/twitter.png" alt="twitter"></a></li>
+            <li><a href=""><img src="img/facebook.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="img/instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+
+        <small>©️ Visions All rights reserved.</small>
+      </div>
+    </header>
+  
+    <!-- <aside></aside> -->
+  
+    <main>
+      <!-- Top -->
+      <section class="top">
+        <h1>CONTACT</h1>
+      </section>
+
+      <!-- Contents -->
+      <section>
+        <form action="contact.php" method="POST">
+          <ul>
+            <li>
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" />
+            </li>
+            <li>
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" />
+            </li>
+            <li>
+              <label for="Reemail">メールアドレス(再確認)</label>
+              <input type="email" id="Reemail" name="Reemail" />
+            </li>
+            <li>
+              <label for="phonNo">電話番号</label>
+              <input type="text" id="phonNo" name="phonNo" />
+            </li>
+            <li>
+              <label for="message">お問い合わせ内容</label>
+              <textarea id="message" name="message"></textarea>
+            </li>
+          </ul>
+          <button type="submit">送信</button>
+        </form>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="lines"></div>
+
+      <div class="lastConttents">
+        <div class="names">
+          <a href="index.html"><img src="img/Logo.png" alt="Visions"></a>
+          <p>眼鏡から未来の地球を見つめる</p>
+          <small>©️ Visions All rights reserved.</small>
+        </div>
+  
+        <div class="footerContents">
+          <div class="siteMap">
+            <p>Site Map</p>
+            <ul>
+              <li><a href="index.html" class="btn">HOME</a></li>
+              <li><a href="news.html" class="btn">NEWS</a></li>
+              <li><a href="products.html" class="btn">PRODUCTS</a></li>
+              <li><a href="about.html" class="btn">ABOUT</a></li>
+              <li><a href="join.html" class="btn">JOIN</a></li>
+              <li><a href="cntact.html" class="btn">CONTACT</a></li>
+            </ul>
+          </div>
+    
+          <div class="siteProducts">
+            <p>Products</p>
+            <ul>
+              <li class="btn"><a href="products.html#opti"><p>OptiGreen</p> <span>オプティグリーン</span></a></li>
+              <li class="btn"><a href="products.html#clear"><p>ClearVision</p> <span>クリアビジョン</span></a></li>
+              <li class="btn"><a href="products.html#ecovue"><p>Ecovue</p> <span>エコヴュー</span></a></li>
+              <li class="btn"><a href="products.html#lunettes"><p>Lunnets</p> <span>ルネット</span></a></li>
+            </ul>
+            <button class="storeBtn"><p class="btnText">WEB STORE</p></button>
+          </div>
+    
+          <div class="social">
+            <p>Social</p>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="img/twitter.png" alt="twitter">
+                  <p>Twitter(X)</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/facebook.png" alt="Facebook">
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/instagram.png" alt="Instagram">
+                  <p>Instagram</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="rightBar">
+    <div>
+      <p>scroll</p>
+      <!-- <img src="img/arrow.png" alt="矢印"> -->
+       <span class="downAnim"></span>
+    </div>
+  </div>
+</body>
+</html>
