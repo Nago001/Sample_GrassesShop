@@ -1,6 +1,26 @@
 'use strict';
 
 {
+  // Loading
+  const loading = document.querySelector('#loading');
+
+  window.addEventListener('load', () => {
+    loading.animate(
+      {
+        opcity: [1, 0],
+        translate: ['0 0', '0 -100%'],
+        visibility: 'hidden',
+      },
+      {
+        duration: 400,
+        delay: 1500,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+    );
+  });
+
+
   // Menu
   const menu = document.querySelector('#menu');
   const menuOpen = document.querySelector('#menuBtn');
