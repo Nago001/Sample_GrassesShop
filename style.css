@@ -240,6 +240,72 @@ section {
 
 
 /* -------------------------------------------------------------- */
+/* ---Loading--- */
+#loading {
+  background: var(--green);
+  position: fixed;
+  z-index: 9997;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.mainCopy {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+}
+
+.loadTitle {
+  z-index: 9998;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mainTitle {
+  object-fit: contain;
+  width: 50%;
+}
+
+.subTitle {
+  margin-top: 5vh;
+  object-fit: contain;
+  width: 70%;
+}
+
+.loadTitle::after {
+  content: "";
+  background-color: var(--green);
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+} 
+
+.loadTitle.one::after {
+  animation: loadin 1s linear forwards;
+}
+
+.loadTitle.sub::after {
+  animation: loadin 1s linear .5s forwards;
+}
+
+@keyframes loadin {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
 /* ---sideBar--- */
 .leftBar {
   background-color: var(--green);
@@ -396,23 +462,6 @@ nav ul {
   object-fit: cover;
   width: 100%;
   height: 100vh;
-}
-
-.mainCopy {
-  position: absolute;
-  top: 30%;
-  left: 0;
-}
-
-.mainTitle {
-  object-fit: contain;
-  width: 50%;
-}
-
-.subTitle {
-  margin-top: 5vh;
-  object-fit: contain;
-  width: 70%;
 }
 
 
@@ -1110,20 +1159,12 @@ small {
     height: 60vh;
   }
 
-  .mainCopy {
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-
   .mainTitle {
-    object-fit: contain;
     width: 60%;
   }
 
   .subTitle {
     margin-top: 4vh;
-    object-fit: contain;
     width: 85%;
   }
 
@@ -1522,7 +1563,7 @@ small {
     }
   
     .mainCopy {
-      top: 60%;
+      top: 50%;
     }
   
     .mainTitle {
